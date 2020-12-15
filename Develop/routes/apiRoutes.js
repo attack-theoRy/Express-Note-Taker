@@ -1,9 +1,14 @@
 const fs = require('fs');
 
-module.exports = function(app)
+module.exports = function(app){
 
-var notes = require("../db/db.json")
+let notes = require("../db/db.json")
 
 app.get("/api/notes", (req, res) => {
     return res.json(notes)
-}
+})
+
+app.get("/api/notes/:id", (req, res) => {
+    // console.log(req.params.id)
+    const id - 
+})
