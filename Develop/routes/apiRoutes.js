@@ -10,5 +10,15 @@ app.get("/api/notes", (req, res) => {
 
 app.get("/api/notes/:id", (req, res) => {
     // console.log(req.params.id)
-    const id - 
+    const id = req.params.id;
+    let fnote;
+
+    notes.forEach(n => {
+        if(id == n.id){
+            fnote = n;
+            return res.json(fnote)
+        }
+    })
+    return res.json(false)
+
 })
