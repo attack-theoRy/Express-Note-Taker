@@ -16,7 +16,7 @@ app.get("/api/notes/:id", (req, res) => {
     notes.forEach(n => {
         if(id == n.id){
             fnote = n;
-            return res.json(fnote)
+            return res.json(n)
         }
     })
     return res.json(false)
