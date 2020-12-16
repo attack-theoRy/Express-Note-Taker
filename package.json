@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "author": "Pirooz Wallace",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/attack-theoRy/Express-Note-Taker/issues"
+    "url": "https://github.com/attack-theoRy/Express-Note-Taker/Develop/index.html"
   },
   "homepage": "https://github.com/attack-theoRy/Express-Note-Taker#readme"
 }
