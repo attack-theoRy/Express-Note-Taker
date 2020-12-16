@@ -41,24 +41,20 @@ app.post("/api/notes", (req, res) => {
     res.json(true)
   })
 
-  app.delete("/api/notes/:id", (req, res) => {
-    const id = req.params.id;
-    let found;
-    notes.forEach((n, index) => {
-      if(id == n.id){
-        notes.splice(index,1)
-        const notesCopy = notes.slice();
-        let jsonNotes = JSON.stringify(notesCopy)
-        fs.writeFile("./db/db.json", jsonNotes, function(err) {
-          if (err) {
-            return console.log(err);
-          }
-          console.log("Success!");
-        })
+  app.delete("/api/notes/:id", function(req, res) {
 
-      }
-    })
-    res.json(true);
-  })
+    let noteId = req.params.id;
+    let newId = 0;
+    console.log(`Deleting note with id ${noteId}`);
+    data = data.filter(currentNote => {
+       return currentNote.id != noteId;
+    });
+    for (currentNote of data) {
+        currentNote.id = newId.toString();
+        newId++;
+    }
+    fs.writeFileSync("./db/db.json", JSON.stringify(data));
+    res.json(data);
+}); 
 }
 
