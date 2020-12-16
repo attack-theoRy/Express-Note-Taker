@@ -2,13 +2,13 @@
   "name": "express-note-taker",
   "version": "1.0.0",
   "description": "Take notes using express.js",
-  "main": "server.js",
+  "main": "Develop/index.js",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "server.js"
+    "start": "Develop/server.js"
   },
   "repository": {
     "type": "git",
