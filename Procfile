@@ -1,1 +1,1 @@
-web: node dist/Develop/server.js
+web: node Develop/server.js
