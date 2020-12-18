@@ -4,17 +4,18 @@ const fs = require("fs");
 module.exports = function(app){
   let notes = require("../db/db.json")
 
+  // retrieve notes
   app.get("/api/notes", (req, res)=>{
     return res.json(notes)
   })
   
   app.get("/api/notes/:id", (req, res) => {
-    // console.log(req.params.id)
+
     const id = req.params.id;
-    let found;
+ 
     notes.forEach(n => {
       if (id == n.id){
-        found = n;
+
         return res.json(n)
       }
     })
@@ -22,6 +23,7 @@ module.exports = function(app){
   })
 
 
+  // add a new note
   app.post("/api/notes", (req, res) => {
     const newNote = req.body;
     if (notes.length === 0){
@@ -40,9 +42,10 @@ module.exports = function(app){
     res.json(true)
   })
 
+  // delete notes
   app.delete("/api/notes/:id", (req, res) => {
     const id = req.params.id;
-    let found;
+ 
     notes.forEach((n, index) => {
       if(id == n.id){
         notes.splice(index,1)
