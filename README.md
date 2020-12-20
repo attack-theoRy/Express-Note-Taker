@@ -6,7 +6,7 @@ Pirooz Wallace
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
-GitHub Repo: [ReadME Repo](https://github.com/attack-theoRy/Express-Note-Taker)
+GitHub Repo: [Express Note Taker Repo](https://github.com/attack-theoRy/Express-Note-Taker)
 
 See the app on Heroku ! : [Express Note Taker by Pirooz](https://pirooz-note-taker.herokuapp.com/)
 
@@ -32,27 +32,32 @@ See the app on Heroku ! : [Express Note Taker by Pirooz](https://pirooz-note-tak
 
 This app uses Express.js and node to create, save and delete notes. 
 
-![Begin](/img/startScreen.PNG)
+![Begin](/public/assets/sampleStart.PNG)
+
+
+![Begin](/public/assets/SampleBlank.PNG)
+
+You start by writing in a note title and then the note text underneath it. When you are done, you can save the note for later using save icon (floppy disk) in the top right.
+
+
+![SampleNote](/public/assets/SampleNote.PNG)
+
+
+Clicking save will keep the note for later on the list to the left.
+
+![Note2](/public/assets/SampleNote2.PNG)
+
+
+Clicking the pencil icon on the top right will allow you to create a new note or you can click the trash icon on the left to delete notes.
 
 
 
-![Halfway](/img/halfwayScreen.PNG)
-
-Then when you are done with all the questions the terminal spits out your answers
-
-![Finished](/img/finishedScreen.PNG)
-
-And then finally the app creates a readME with a shield license logo at the top and a fully working Table of Contents with links and the pre-generated license text along with links to your gitHub user profile and whatever other information you gave. The ReadME is placed within the GeneratedReadMEs folder  
-
-![ReadME](/img/readMEScreen.PNG)
 
 ## Installation
 
-To use properly you need to install Node.js and in the terminal you have to use the command 
-``` npm init ```
-and then also
-``` npm install express ```  to initialize and then install the correct dependencies, in this
-case, inquirer. 
+From heroku the app will just run, but if you want open locally through vs code / terminal there are some extra steps:
+First navigate to folder path in terminal then install Node and Express using the command 
+``` npm init -y ``` and then also ``` npm install express ``` .  Then to run,  type ``` node server.js ``` in the terminal. 
 
 ## License
 
@@ -84,6 +89,8 @@ For questions please contact: Pirooz Wallace
 at : PiroozWallace@outlook.com
 
 Github Profile: https://github.com/attack-theoRy
+
+Portfolio : [Pirooz's Portfolio](https://attack-theory.github.io/Portfolio/)
 
 
 
