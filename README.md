@@ -32,10 +32,10 @@ See the app on Heroku ! : [Express Note Taker by Pirooz](https://pirooz-note-tak
 
 This app uses Express.js and node to create, save and delete notes. 
 
-![Begin](/public/assets/SampleStart.png)
+![Launch Page](/public/assets/SampleStart.png)
 
 
-![Sample](/public/assets/SampleBlank.png)
+![blank note](/public/assets/SampleBlank.png)
 
 You start by writing in a note title and then the note text underneath it. When you are done, you can save the note for later using save icon (floppy disk) in the top right.
 
