@@ -43,7 +43,7 @@ You start by writing in a note title and then the note text underneath it. When 
 ![SampleNote](/public/assets/sampleNote.png)
 
 
-Clicking save will keep the note for later on the list to the left.
+Clicking save will keep the note for later on the list to the left. You can switch between notes by clicking anywhere on them on the list to the left (except the trash can, that will delete them).
 
 ![Note2](/public/assets/sampleNote2.png)
 
