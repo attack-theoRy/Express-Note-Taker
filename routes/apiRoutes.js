@@ -13,6 +13,7 @@ module.exports = function(app){
 
     const id = req.params.id;
  
+    // loop through array and return all the notes
     notes.forEach(n => {
       if (id == n.id){
 
@@ -26,6 +27,7 @@ module.exports = function(app){
   // add a new note
   app.post("/api/notes", (req, res) => {
     const newNote = req.body;
+    // increment id and push new note into array
     if (notes.length === 0){
       newNote.id = 1
     } else {
@@ -46,6 +48,7 @@ module.exports = function(app){
   app.delete("/api/notes/:id", (req, res) => {
     const id = req.params.id;
  
+    // look for id and then splice (remove) that index
     notes.forEach((n, index) => {
       if(id == n.id){
         notes.splice(index,1)
